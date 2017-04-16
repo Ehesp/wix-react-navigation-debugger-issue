@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "234948512308",
+    "firebase_url": "https://mytest-4dff1.firebaseio.com",
+    "project_id": "mytest-4dff1",
+    "storage_bucket": "mytest-4dff1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234948512308:android:32f94270a0999e71",
+        "android_client_info": {
+          "package_name": "com.wixdebuggerissue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234948512308-1qeq1f6rh7edgk1odg693ufvv5dra9ct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYyRpI6advbPCgfJsCBi7dpV11eySbL2Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
