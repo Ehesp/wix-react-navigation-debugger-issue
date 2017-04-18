@@ -8,7 +8,7 @@ import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
-import io.invertase.firebase.RNFirebasePackage;
+// import io.invertase.firebase.RNFirebasePackage;
 import com.facebook.soloader.SoLoader;
 
 import java.util.Arrays;
@@ -25,8 +25,7 @@ public class MainApplication extends NavigationApplication {
    @Override
    public List<ReactPackage> createAdditionalReactPackages() {
     return Arrays.<ReactPackage>asList(
-        new VectorIconsPackage(),
-        new RNFirebasePackage()
+        new VectorIconsPackage()
     );
    }
 

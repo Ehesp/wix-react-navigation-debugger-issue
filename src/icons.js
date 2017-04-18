@@ -18,20 +18,28 @@ const icons = {
 };
 
 const iconsMap = {};
-const iconsLoaded = new Promise((resolve) => {
-    const promises = [];
+const iconsLoaded = () => {
+    // const promises = [Promise.resolve];
 
-    Object.keys(icons).forEach((iconName) => {
-        const Provider = icons[iconName][1] || FontAwesome;
-        const size = __DEV__ || Platform.OS === 'ios' ? icons[iconName][0] : PixelRatio.getPixelSizeForLayoutSize(icons[iconName][0]);
-        promises.push(Provider.getImageSource(iconName.replace(replaceSuffixPattern, ''), size, icons[iconName][2] || '#000000'));
-    });
+    // Object.keys(icons).forEach((iconName) => {
+    //     const Provider = icons[iconName][1] || FontAwesome;
+    //     const size = __DEV__ || Platform.OS === 'ios' ? icons[iconName][0] : PixelRatio.getPixelSizeForLayoutSize(icons[iconName][0]);
+    //     promises.push(Provider.getImageSource(iconName.replace(replaceSuffixPattern, ''), size, icons[iconName][2] || '#000000'));
+    // });
 
-    new Promise.all(promises).then((sources) => {
-        Object.keys(icons).forEach((iconName, idx) => iconsMap[iconName] = sources[idx]);
-        resolve(true);
-    });
-});
+    console.log('running')
+
+    return new Promise((resolve) => {
+        console.log('resolving')
+
+        return resolve();
+    })
+    //
+    // return Promise.all(promises).then((sources) => {
+    //     // Object.keys(icons).forEach((iconName, idx) => iconsMap[iconName] = sources[idx]);
+    //     return Promise.resolve();
+    // });
+};
 
 export {
     icons,
